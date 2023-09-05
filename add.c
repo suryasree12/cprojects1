@@ -1,16 +1,17 @@
 #include<stdio.h>
-long int multiplyNumbers(int n);
-int main() {
-    int n;
-    printf("Enter a positive integer: ");
-    scanf("%d",&n);
-    printf("Factorial of %d = %ld", n, multiplyNumbers(n));
-    return 0;
-}
+add(){
+    printf("enter the numbers: %d");
+    //declare num1 and num2 to hold the given numbers
+    int num1, num2;
 
-long int multiplyNumbers(int n) {
-    if (n>=1)
-        return n*multiplyNumbers(n-1);
-    else
-        return 1;
+    //Taking the input
+    scanf("%d %d", &num1, &num2);
+
+    //Calculating the sum of num1 and num2
+    int sum = num1 + num2;
+   
+    //Printing the addition of two numbers in C
+    printf("The sum of the given numbers is: %d \n\n", sum);
+
+   // return 0;
 }
